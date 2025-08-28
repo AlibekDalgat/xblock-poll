@@ -451,16 +451,16 @@ class PollBlock(PollBase, CSVExportMixin):
     """
     # pylint: disable=too-many-instance-attributes
 
-    display_name = String(default=_('Poll'))
-    question = String(default=_('What is your favorite color?'))
+    display_name = String(default='Опрос')
+    question = String(default='Какой Ваш любимый цвет?')
     # This will be converted into an OrderedDict.
     # Key, (Label, Image path)
     answers = List(
         default=[
-            ('R', {'label': _('Red'), 'img': None, 'img_alt': None}),
-            ('B', {'label': _('Blue'), 'img': None, 'img_alt': None}),
-            ('G', {'label': _('Green'), 'img': None, 'img_alt': None}),
-            ('O', {'label': _('Other'), 'img': None, 'img_alt': None}),
+            ('R', {'label': 'Красный', 'img': None, 'img_alt': None}),
+            ('B', {'label': 'Синий', 'img': None, 'img_alt': None}),
+            ('G', {'label': 'Зелёный', 'img': None, 'img_alt': None}),
+            ('O', {'label': 'Другой', 'img': None, 'img_alt': None}),
         ],
         scope=Scope.settings, help=_("The answer options on this poll.")
     )
@@ -883,27 +883,27 @@ class PollBlock(PollBase, CSVExportMixin):
 class SurveyBlock(PollBase, CSVExportMixin):
     # pylint: disable=too-many-instance-attributes
 
-    display_name = String(default=_('Survey'))
+    display_name = String(default='Оценка')
     # The display name affects how the block is labeled in the studio,
     # but either way we want it to say 'Poll' by default on the page.
-    block_name = String(default=_('Poll'))
+    block_name = String(default='Анкета')
     answers = List(
         default=[
-            ('Y', _('Yes')),
-            ('N', _('No')),
-            ('M', _('Maybe'))
+            ('Y', 'Да'),
+            ('N', 'Нет'),
+            ('M', 'Возможно')
         ],
         scope=Scope.settings, help=_("Answer choices for this Survey")
     )
     questions = List(
         default=[
-            ('enjoy', {'label': _('Are you enjoying the course?'), 'img': None, 'img_alt': None}),
+            ('enjoy', {'label': 'Нравится ли Вам курс?', 'img': None, 'img_alt': None}),
             ('recommend', {
-                'label': _('Would you recommend this course to your friends?'),
+                'label': 'Порекомендовали бы Вы этот курс своим друзьям?',
                 'img': None,
                 'img_alt': None
             }),
-            ('learn', {'label': _('Do you think you will learn a lot?'), 'img': None, 'img_alt': None}),
+            ('learn', {'label': 'Считаете ли Вы, что многому научитесь?', 'img': None, 'img_alt': None}),
         ],
         scope=Scope.settings, help=_("Questions for this Survey")
     )

@@ -1,0 +1,395 @@
+# Russian translations for xblock-poll
+# Copyright (C) 2025 Open Craft
+# This file is distributed under the same license as the xblock-poll package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: xblock-poll 1.15.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-09 12:04+0000\n"
+"PO-Revision-Date: 2025-08-27 13:25+0300\n"
+"Last-Translator: Alibek\n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: poll/poll.py:232
+msgid "Whether or not to display results to the user."
+msgstr "Отображать ли результаты пользователю."
+
+#: poll/poll.py:233
+msgid "The maximum number of times a user may send a submission."
+msgstr "Максимальное количество отправок ответа пользователем."
+
+#: poll/poll.py:235
+msgid "Number of times the user has sent a submission."
+msgstr "Количество отправленных пользователем ответов."
+
+#: poll/poll.py:237
+msgid "Text to display after the user votes."
+msgstr "Текст, отображаемый после голосования пользователя."
+
+#. Translators: {field} is either "answers" or "questions".
+#: poll/poll.py:298
+#, python-brace-format
+msgid "'{field}' is not present, or not a JSON array."
+msgstr "'{field}' отсутствует или не является массивом JSON."
+
+#. Translators: {noun} is either "Answer" or "Question". {item} identifies the answer or question.
+#: poll/poll.py:310
+#, python-brace-format
+msgid "{noun} {item} not a javascript object!"
+msgstr "{noun} {item} не является объектом JavaScript!"
+
+#. Translators: {noun} is either "Answer" or "Question". {item} identifies the answer or question.
+#: poll/poll.py:319
+#, python-brace-format
+msgid "{noun} {item} contains no key."
+msgstr "{noun} {item} не содержит ключа."
+
+#. Translators: {noun} is either "Answer" or "Question". {noun_lower} is the lowercase version of {noun}.
+#: poll/poll.py:331
+#, python-brace-format
+msgid ""
+"{noun} has no text or img. Please make sure all {noun_lower}s have one or "
+"the other, or both."
+msgstr ""
+"{noun} не содержит текста или изображения. Убедитесь, что все {noun_lower} имеют текст, изображение или оба."
+
+#. Translators: {noun} is either "Answer" or "Question". {noun_lower} is the lowercase version of {noun}.
+#: poll/poll.py:342
+#, python-brace-format
+msgid ""
+"{noun} was added with no label. All {noun_lower}s must have labels. Please "
+"check the form. Check the form and explicitly delete {noun_lower}s if not "
+"needed."
+msgstr ""
+"{noun} добавлен без метки. Все {noun_lower} должны иметь метки. Проверьте форму и явно удалите {noun_lower}, если они не нужны."
+
+#: poll/poll.py:350
+msgid ""
+"All images must have an alternative text describing the image in a way that "
+"would allow someone to answer the poll if the image did not load."
+msgstr ""
+"Все изображения должны иметь альтернативный текст, описывающий изображение таким образом, чтобы пользователь мог ответить на опрос, если изображение не загрузилось."
+
+#. Translators: {noun_lower} is either "answer" or "question".
+#: poll/poll.py:362
+#, python-brace-format
+msgid "You must include at least one {noun_lower}."
+msgstr "Необходимо включить хотя бы один {noun_lower}."
+
+#: poll/poll.py:410
+msgid "Maximum Submissions missing or not an integer."
+msgstr "Максимальное количество отправок отсутствует или не является целым числом."
+
+#: poll/poll.py:415
+msgid "Private results may not be False when Maximum Submissions is not 1."
+msgstr "Приватные результаты не могут быть False, если максимальное количество отправок не равно 1."
+
+#: poll/poll.py:452 poll/poll.py:887
+msgid "Poll"
+msgstr "Опрос"
+
+#: poll/poll.py:453
+msgid "What is your favorite color?"
+msgstr "Какой ваш любимый цвет?"
+
+#: poll/poll.py:458
+msgid "Red"
+msgstr "Красный"
+
+#: poll/poll.py:459
+msgid "Blue"
+msgstr "Синий"
+
+#: poll/poll.py:460
+msgid "Green"
+msgstr "Зеленый"
+
+#: poll/poll.py:461
+msgid "Other"
+msgstr "Другое"
+
+#: poll/poll.py:463
+msgid "The answer options on this poll."
+msgstr "Варианты ответов на этот опрос."
+
+#: poll/poll.py:467 poll/poll.py:913
+msgid "Total tally of answers from students."
+msgstr "Общее количество ответов от студентов."
+
+#: poll/poll.py:468
+msgid "The student's answer"
+msgstr "Ответ студента"
+
+#: poll/poll.py:683 poll/poll.py:1200
+msgid "You have already voted in this poll."
+msgstr "Вы уже проголосовали в этом опросе."
+
+#: poll/poll.py:688
+msgid "Answer not included with request."
+msgstr "Ответ не включен в запрос."
+
+#. Translators: {choice} uniquely identifies a specific answer belonging to a poll or survey.
+#: poll/poll.py:697
+#, python-brace-format
+msgid "No key \"{choice}\" in answers table."
+msgstr "Ключ \"{choice}\" отсутствует в таблице ответов."
+
+#: poll/poll.py:706 poll/poll.py:1208
+msgid "You have already voted as many times as you are allowed."
+msgstr "Вы уже проголосовали максимальное количество раз."
+
+#: poll/poll.py:736
+msgid "You must specify a question."
+msgstr "Необходимо указать вопрос."
+
+#: poll/poll.py:739 poll/poll.py:836 poll/poll.py:1262 poll/poll.py:1390
+msgid "Answer"
+msgstr "Ответ"
+
+#: poll/poll.py:835 poll/poll.py:1263 poll/poll.py:1389
+msgid "Question"
+msgstr "Вопрос"
+
+#: poll/poll.py:838 poll/poll.py:1391
+msgid "Submissions count"
+msgstr "Количество отправок"
+
+#: poll/poll.py:884
+msgid "Survey"
+msgstr "Анкета"
+
+#: poll/poll.py:890
+msgid "Yes"
+msgstr "Да"
+
+#: poll/poll.py:891
+msgid "No"
+msgstr "Нет"
+
+#: poll/poll.py:892
+msgid "Maybe"
+msgstr "Возможно"
+
+#: poll/poll.py:894
+msgid "Answer choices for this Survey"
+msgstr "Варианты ответов для этой анкеты"
+
+#: poll/poll.py:898
+msgid "Are you enjoying the course?"
+msgstr "Нравится ли вам курс?"
+
+#: poll/poll.py:900
+msgid "Would you recommend this course to your friends?"
+msgstr "Порекомендовали бы вы этот курс своим друзьям?"
+
+#: poll/poll.py:904
+msgid "Do you think you will learn a lot?"
+msgstr "Считаете ли вы, что многому научитесь?"
+
+#: poll/poll.py:906
+msgid "Questions for this Survey"
+msgstr "Вопросы для этой анкеты"
+
+#: poll/poll.py:915
+msgid "The user's answers"
+msgstr "Ответы пользователя"
+
+#: poll/poll.py:1216
+msgid ""
+"Not all questions were included, or unknown questions were included. Try "
+"refreshing and trying again."
+msgstr ""
+"Не все вопросы были включены, или были включены неизвестные вопросы. Попробуйте обновить и повторить."
+
+#. Translators: {answer_key} uniquely identifies a specific answer belonging to a poll or survey.
+#. {question_key} uniquely identifies a specific question belonging to a poll or survey.
+#: poll/poll.py:1229
+#, python-brace-format
+msgid "Found unknown answer '{answer_key}' for question key '{question_key}'"
+msgstr "Найден неизвестный ответ '{answer_key}' для ключа вопроса '{question_key}'"
+
+#: poll/public/html/poll.html:35 poll/public/html/survey.html:53
+msgid "Submit"
+msgstr "Отправить"
+
+#: poll/public/html/poll.html:40 poll/public/html/survey.html:55
+msgid "Thank you."
+msgstr "Спасибо."
+
+#: poll/public/html/poll.html:44
+#, python-format
+msgid ""
+"\n"
+"        You have used %(submissions_count_s)s out of %(max_submissions_s)s "
+"submissions.\n"
+"      "
+msgstr ""
+"\n"
+"        Вы использовали %(submissions_count_s)s из %(max_submissions_s)s "
+"отправок.\n"
+"      "
+
+#: poll/public/html/poll.html:52 poll/public/html/poll_edit.html:27
+#: poll/public/html/survey.html:64
+msgid "Feedback"
+msgstr "Отзыв"
+
+#: poll/public/html/poll.html:64 poll/public/html/survey.html:73
+msgid "View results"
+msgstr "Посмотреть результаты"
+
+#: poll/public/html/poll.html:71 poll/public/html/survey.html:81
+msgid "Export results to CSV"
+msgstr "Экспортировать результаты в CSV"
+
+#: poll/public/html/poll.html:72 poll/public/html/survey.html:82
+msgid "Download CSV"
+msgstr "Скачать CSV"
+
+#: poll/public/html/poll.html:76 poll/public/html/survey.html:86
+msgid "Student data and results CSV available for download in the LMS."
+msgstr "Данные студентов и результаты в формате CSV доступны для скачивания в LMS."
+
+#: poll/public/html/poll_edit.html:8
+msgid "Display Name"
+msgstr "Название"
+
+#: poll/public/html/poll_edit.html:15
+msgid "Question/Prompt"
+msgstr "Вопрос/Подсказка"
+
+#: poll/public/html/poll_edit.html:16
+#, python-format
+msgid ""
+"\n"
+"                    %(link_start)sMarkdown Syntax%(link_end)s is supported.\n"
+"                "
+msgstr ""
+"\n"
+"                    Поддерживается %(link_start)sсинтаксис Markdown%(link_end)s.\n"
+"                "
+
+#: poll/public/html/poll_edit.html:23
+msgid "Enter the prompt for the user."
+msgstr "Введите подсказку для пользователя."
+
+#: poll/public/html/poll_edit.html:28
+#, python-format
+msgid ""
+"\n"
+"                %(link_start)sMarkdown Syntax%(link_end)s is supported.\n"
+"            "
+msgstr ""
+"\n"
+"                Поддерживается %(link_start)sсинтаксис Markdown%(link_end)s.\n"
+"            "
+
+#: poll/public/html/poll_edit.html:36
+msgid ""
+"\n"
+"                    This text will be displayed for the user as some extra "
+"feedback after they have\n"
+"                    submitted their response to the poll.\n"
+"                "
+msgstr ""
+"\n"
+"                    Этот текст будет отображаться для пользователя как дополнительная "
+"обратная связь после отправки ответа на опрос.\n"
+"                "
+
+#: poll/public/html/poll_edit.html:44
+msgid "Private Results"
+msgstr "Приватные результаты"
+
+#: poll/public/html/poll_edit.html:48
+msgid "True"
+msgstr "Истина"
+
+#: poll/public/html/poll_edit.html:49
+msgid "False"
+msgstr "Ложь"
+
+#: poll/public/html/poll_edit.html:53
+msgid "If this is set to True, don't display results of the poll to the user."
+msgstr "Если установлено Истина, результаты опроса не отображаются пользователю."
+
+#: poll/public/html/poll_edit.html:58
+msgid "Maximum Submissions"
+msgstr "Максимальное количество отправок"
+
+#: poll/public/html/poll_edit.html:63
+#, python-format
+msgid ""
+"\n"
+"                    Maximum number of times a user may submit a poll. "
+"%(bold_start)sSetting this to a value other than 1 will imply that\n"
+"                    'Private Results' should be true.%(bold_end)s Setting it "
+"to 0 will allow infinite resubmissions.\n"
+"                "
+msgstr ""
+"\n"
+"                    Максимальное количество отправок опроса пользователем. "
+"%(bold_start)sУстановка значения, отличного от 1, подразумевает, что\n"
+"                    'Приватные результаты' должны быть истинными.%(bold_end)s Установка 0 разрешает бесконечные отправки.\n"
+"                "
+
+#: poll/public/html/poll_edit.html:71
+msgid "Notes:"
+msgstr "Примечания:"
+
+#: poll/public/html/poll_edit.html:72
+msgid ""
+"\n"
+"                    If you change an answer's text, all students who voted "
+"for that choice will have their votes updated to\n"
+"                    the new text. You'll want to avoid changing an answer "
+"from something like 'True' to 'False', accordingly.\n"
+"                    If you delete an answer, any votes for that answer will "
+"also be deleted. Students whose choices are deleted\n"
+"                    may vote again, but will not lose course progress.\n"
+"                "
+msgstr ""
+"\n"
+"                    Если вы измените текст ответа, все голоса студентов за этот вариант будут обновлены на новый текст.\n"
+"                    Поэтому следует избегать изменения ответа, например, с 'Истина' на 'Ложь'.\n"
+"                    При удалении ответа все голоса за него также будут удалены. Студенты, чьи ответы удалены,\n"
+"                    могут проголосовать снова, но не потеряют прогресс курса.\n"
+"                "
+
+#: poll/public/html/poll_edit.html:81
+msgid ""
+"\n"
+"                        Questions must be similarly cared for. If a "
+"question's text is changed, any votes for that question will remain.\n"
+"                        If a question is deleted, any student who previously "
+"took the survey will be permitted to retake it, but will not\n"
+"                        lose course progress.\n"
+"                    "
+msgstr ""
+"\n"
+"                        С вопросами нужно обращаться так же осторожно. Если текст вопроса изменен, все голоса за этот вопрос сохранятся.\n"
+"                        Если вопрос удален, любой студент, ранее участвовавший в анкете, сможет пройти ее снова, но не\n"
+"                        потеряет прогресс курса.\n"
+"                    "
+
+#: poll/public/html/poll_edit.html:97
+msgid "Add Answer"
+msgstr "Добавить ответ"
+
+#: poll/public/html/poll_edit.html:101
+msgid "Add Question"
+msgstr "Добавить вопрос"
+
+#: poll/public/html/poll_edit.html:105
+msgid "Save"
+msgstr "Сохранить"
+
+#: poll/public/html/poll_edit.html:108
+msgid "Cancel"
+msgstr "Отмена"

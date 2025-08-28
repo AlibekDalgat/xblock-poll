@@ -4,10 +4,7 @@ from bleach.sanitizer import Cleaner
 from markdown import markdown
 
 
-# Make '_' a no-op so we can scrape strings
-def _(text):
-    return text
-
+from django.utils.translation import gettext_lazy as _
 
 def ngettext_fallback(text_singular, text_plural, number):
     """ Dummy `ngettext` replacement to make string extraction tools scrape strings marked for translation """
