@@ -246,11 +246,11 @@ msgstr "Посмотреть результаты"
 
 #: poll/public/html/poll.html:71 poll/public/html/survey.html:81
 msgid "Export results to CSV"
-msgstr "Экспортировать результаты в CSV"
+msgstr "Обновить результаты"
 
 #: poll/public/html/poll.html:72 poll/public/html/survey.html:82
 msgid "Download CSV"
-msgstr "Скачать CSV"
+msgstr "Скачать XLS"
 
 #: poll/public/html/poll.html:76 poll/public/html/survey.html:86
 msgid "Student data and results CSV available for download in the LMS."

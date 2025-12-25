@@ -785,10 +785,10 @@ class PollBlock(PollBase, CSVExportMixin):
         ]
 
     def get_filename(self):
-        return u"poll-data-export-{}.csv".format(time.strftime("%Y-%m-%d-%H%M%S", time.gmtime(time.time())))
+        return u"результаты-по-опросу-{}.xls".format(time.strftime("%Y-%m-%d-%H%M%S", time.gmtime(time.time())))
 
     def prepare_data(self):
-        header_row = ['user_id', 'username', 'user_email', 'question', 'answer']
+        header_row = ['ID пользователя', 'Имя пользователя', 'Электронная почта', 'Вопрос', 'Ответ']
         data = {}
         answers_dict = dict(self.answers)
         for sm in self.student_module_queryset():
@@ -1329,10 +1329,10 @@ class SurveyBlock(PollBase, CSVExportMixin):
         ]
 
     def get_filename(self):
-        return u"survey-data-export-{}.csv".format(time.strftime("%Y-%m-%d-%H%M%S", time.gmtime(time.time())))
+        return u"результаты-по-оценке-{}.xls".format(time.strftime("%Y-%m-%d-%H%M%S", time.gmtime(time.time())))
 
     def prepare_data(self):
-        header_row = ['user_id', 'username', 'user_email']
+        header_row = ['ID пользователя', 'Имя пользователя', 'Электронная почта']
         sorted_questions = sorted(self.questions, key=lambda x: x[0])
         questions = [q[1]['label'] for q in sorted_questions]
         data = {}
